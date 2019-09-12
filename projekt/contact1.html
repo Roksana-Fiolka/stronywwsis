@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transparent Contact US form</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".btn").click(function(){
+				$(".input, .text-area").val(" ");
+			});
+		});
+	</script>
+	<link rel="stylesheet" href="styles.css">
+  <style>@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('bg.jpg') no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Abhaya Libre;
+}
+section {
+  min-height: 100%;
+}
+.navlink {
+color:black;
+float: left;
+width: 170px;
+padding: 20px;
+margin-right: 10px;
+text-align: center;
+border: solid 2px transparent;
+transition: border-color 0.5s;
+cursor: pointer;
+
+}
+.navlink:hover {
+border-color: black;
+
+}
+.centerButtons {
+    margin: 0 auto;
+    float: left;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img/e.jpg");
+
+  /* Full height */
+  height: 50%;
+  padding: 30px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-form{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    background: rgba(0,0,0,0.7);
+    padding: 40px 50px;
+    border-radius: 5px;
+}
+
+.title{
+    font-size: 2em;
+    line-height: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffc107;
+    padding-bottom: 15px;
+}
+
+.input-fields {
+    padding: 0 30px;
+}
+
+.input-fields .items{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.input-fields .items .label{
+    display: block;
+    font-size: 1em;
+    color: #ffecb3;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding-bottom: 5px;
+}
+
+.input-fields .items .input,
+.input-fields .items .text-area{
+    background: transparent;
+    border: 0;
+    border: 1px solid #ffecb3;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1em;
+    color: #ffecb3;
+    border-radius: 3px;
+}
+
+.btn{
+    margin: 0 30px;
+    background: #ffc107;
+    color: #ffecb3;
+    font-size: 1.25em;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.items #msg{
+    height: 100px;
+}
+
+
+/* jquery code */
+.input-fields .items .input.active .label{
+    font-size: 15px;
+    top: 0;
+}
+
+@media screen and (max-width: 750px){
+    .input-fields {
+        padding: 0;
+    }
+}
+.footer {
+display:block;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#333232;
+   color: white;
+   text-align: center;
+   padding: 20px;
+
+ </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="centerButtons">
+<a href="projekt.html">
+    <div class="navlink">HOME</div>
+  </a>
+<a href="projekt.html#section2">
+    <div class="navlink">ABOUT ME</div>
+  </a>
+  <a href="#">
+    <div class="navlink">SMTH ELSE</div>
+  </a>
+    <div class="navlink dropdown-toggle" data-toggle="dropdown">PORTFOLIO</div>
+    <div class="dropdown-menu">
+      <a href="africa.html" class="dropdown-item">Africa</a>
+  </a>
+</nav>
+</div>
+</div>
+</div>
+<div class="bg"></div>
+
+<div class="wrapper">
+		<div class="contact-form">
+			<div class="title">Transparent Contact US Form</div>
+
+			<div class="input-fields">
+					<div class="items">
+						<label for="name" class="label">name</label>
+						<input id="name" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="email" class="label">email</label>
+						<input id="email" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="subject" class="label">subject</label>
+						<input id="subject" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="msg" class="label">message</label>
+						<textarea id="msg" class="text-area"></textarea>
+					</div>
+			</div>
+
+			<div class="btn">send</div>
+		</div>
+</div>
+
+</body>
+</html>
