@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="all">
+  <meta name="Author" content="Roksana Fiołka">
+  <meta name="Description" content="Photographer's portfolio page">
+  <meta name="Keywords" content="portfolio, animals, pictures"
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <script type="text/javascript">
+    function display_c(){
+    var refresh=1000;
+    mytime=setTimeout('display_ct()',refresh)
+    }
+
+    function display_ct() {
+    var x = new Date()
+    var x1=x.toLocaleString();
+    document.getElementById('ct').innerHTML = x1;
+    tt=display_c();
+    }
+    </script>
+</head>
+<style>
+body, html {
+  height: 100%;
+
+  margin: 0;
+  font-family: Abhaya Libre;
+}
+section {
+  min-height: 100%;
+}
+/* navbar */
+.navlink {
+color:black;
+float: left;
+width: 170px;
+padding: 20px;
+margin-right: 10px;
+text-align: center;
+border: solid 2px transparent;
+transition: border-color 0.5s;
+cursor: pointer;
+
+}
+.navlink:hover {
+border-color: black;
+
+}
+.centerButtons {
+    margin: 0 auto;
+    float: left;
+}
+
+/*gallery */
+  .container.gallery-container {
+      background-color: #fff;
+      color: #35373a;
+      min-height: 100vh;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+  }
+
+  .gallery-container h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Droid Sans', sans-serif;
+      font-weight: bold;
+  }
+
+  .gallery-container p.page-description {
+      text-align: center;
+      max-width: 800px;
+      margin: 25px auto;
+      color: #888;
+      font-size: 18px;
+  }
+
+  .tz-gallery {
+      padding: 40px;
+  }
+
+  .tz-gallery .lightbox img {
+      width: 100%;
+      margin-bottom: 30px;
+      transition: 0.2s ease-in-out;
+      box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  }
+
+
+  .tz-gallery .lightbox img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  }
+
+  .tz-gallery img {
+      border-radius: 4px;
+  }
+
+  .baguetteBox-button {
+      background-color: transparent !important;
+  }
+
+
+  @media(max-width: 768px) {
+      body {
+          padding: 0;
+      }
+
+      .container.gallery-container {
+          border-radius: 0;
+      }
+  }
+  /*clock and date */
+  #ct {
+  margin-top: -30px;
+  float:right;
+  }
+  /* footer */
+  .footer {
+     position: relative;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: #333232;
+     color: white;
+     text-align: center;
+     padding: 36px;
+  }
+
+  .s-m{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+  }
+  .s-m a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 22px;
+  }
+  .s-m a:hover{
+    background: #e67e22;
+  }
+  .s-m a i{
+    transition: 0.4s all;
+  }
+  .s-m a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+  }
+  .footer-distributed .footer-icons{
+  	margin-top: 25px;
+  }
+</style>
+
+  <body onload=display_ct();>
+          <div class="nav">
+        <div class="centerButtons">
+      <a href="projekt.html">
+        <div class="navlink">HOME</div>
+      </a>
+      <a href="projekt.html#section2">
+        <div class="navlink">ABOUT ME</div>
+      </a>
+      <div class="navlink dropdown-toggle" data-toggle="dropdown">PORTFOLIO</div>
+        <div class="dropdown-menu">
+          <a href="africa.html" class="dropdown-item">Africa</a>
+          <a href="portfolio2.html" class="dropdown-item">Europe&Asia</a>
+        </div>
+      <a href="contact.html">
+        <div class="navlink">CONTACT</div>
+      </a>
+      <a href="blog.html">
+        <div class="navlink">BLOG</div>
+      </a>
+    </div>
+  </div>
+  <div id='ct' ></div>
+
+          <div class="container gallery-container">
+
+      <h1>Europe and Asia</h1>
+
+      <p class="page-description text-center">Mix from both continents</p>
+
+      <div class="tz-gallery">
+
+          <div class="row">
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e1.jpg">
+                      <img src="img/e1.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e2.jpg">
+                      <img src="img/e2.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                  <a class="lightbox" href="img/e3.jpg">
+                      <img src="img/e3.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e4.jpg">
+                      <img src="img/e4.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e5.jpg">
+                      <img src="img/e5.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e6.jpg">
+                      <img src="img/e6.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e7.png">
+                      <img src="img/e7.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e8.jpg">
+                      <img src="img/e8.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e9.jpg">
+                      <img src="img/e9.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e10.jpg">
+                      <img src="img/e10.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e11.jpg">
+                      <img src="img/e11.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e12.jpg">
+                      <img src="img/e12.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e13.jpg">
+                      <img src="img/e13.jpg">
+                  </a>
+
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e14.jpg">
+                      <img src="img/e14.jpg">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/e15.jpg">
+                      <img src="img/e15.jpg">
+                  </a>
+              </div>
+          </div>
+
+      </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+      baguetteBox.run('.tz-gallery');
+  </script>
+
+</div>
+<div class="footer">
+  <p>&copy; All rights reserved.</p>
+<div class="s-m">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-google-plus-g"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+      </body>
+    </html>

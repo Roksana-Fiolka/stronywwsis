@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="all">
+    <meta name="Author" content="Roksana Fiołka">
+    <meta name="Description" content="Photographer's portfolio page">
+    <meta name="Keywords" content="portfolio, animals, pictures"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<script type="text/javascript">
+function display_c(){
+var refresh=1000;
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+var x1=x.toLocaleString();
+document.getElementById('ct').innerHTML = x1;
+tt=display_c();
+}
+</script>
+  <style>
+  /* navbar */
+.navlink {
+color:black;
+float: left;
+width: 170px;
+padding: 20px;
+margin-right: 10px;
+text-align: center;
+border: solid 2px transparent;
+transition: border-color 0.5s;
+cursor: pointer;
+
+}
+.navlink:hover {
+border-color: black;
+
+}
+.centerButtons {
+    margin: 0 auto;
+    float: left;
+}
+/* header */
+.leopard {
+  background-image: url("https://artistworks.com/sites/default/files/pictures/picture-72148.jpg");
+  background-size: cover;
+  height:500px;
+}
+
+.leopard .leopard-text {
+  margin-top: 40px;
+  margin-right: 70px;
+  float:right;
+  color: white;
+  max-width: 600px;
+  font-family: 'Gayathri', sans-serif;
+
+}
+a.hero-link {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 300;
+  float:right;
+}
+.hero-link:hover {
+  color: #999;
+}
+
+/* posts */
+.posts {
+margin-left: 10%;
+margin-right: 10%;
+text-align: center;
+}
+
+.post {
+display: table;
+margin-top: 60px;
+text-align: left;
+font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.post img {
+height: 300px;
+width: 420px;
+}
+
+.post .text {
+vertical-align: middle;
+display: table-cell;
+padding: 0px 20px 0px 50px;
+max-width: calc(100% - 350px);
+
+}
+
+/*quote */
+.q {
+padding-left:340px;
+margin: 60px;
+font-size: 22px;
+color: #777777;
+width: 1000px;
+}
+/*post section */
+.text {
+  width: 600px;
+}
+
+h2{
+  text-decoration: none;
+ color:black;
+ font-family: 'Open Sans', sans-serif;
+}
+/*divider*/
+.panda {
+width: 100%;
+background-size: cover;
+}
+.panda1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  width:100%;
+  height:auto;
+}
+.panda-text {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  font-size: 50px;
+  width:400px;
+  font-family: 'Gayathri', sans-serif;
+  color:#210511;
+
+}
+.panda1 .btn2 {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: #210511;
+  font-size: 50px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.panda1 .btn2:hover {
+  background-color: #ebdde2;
+}
+/*date and clock*/
+#ct {
+margin-top: -25px;
+float:right;
+}
+/* footer */
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333232;
+   color: white;
+   text-align: center;
+   padding: 36px;
+}
+
+.s-m{
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+}
+.s-m a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: #2c3e50;
+  color: white;
+  margin: 0 6px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-size: 22px;
+}
+.s-m a:hover{
+  background: #e67e22;
+}
+.s-m a i{
+  transition: 0.4s all;
+}
+.s-m a:hover > i{
+  transform: scale(1.6) rotate(25deg);
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+</style>
+  </head>
+  <body onload=display_ct();>
+    <header class="header">
+      <div class="nav">
+          <div class="centerButtons">
+        <a href="projekt.html">
+          <div class="navlink">HOME</div>
+        </a>
+        <a href="projekt.html#section2">
+          <div class="navlink">ABOUT ME</div>
+        </a>
+        <div class="navlink dropdown-toggle" data-toggle="dropdown">PORTFOLIO</div>
+          <div class="dropdown-menu">
+            <a href="africa.html" class="dropdown-item">Africa</a>
+            <a href="portfolio2.html" class="dropdown-item">Europe&Asia</a>
+          </div>
+          </a>
+        <a href="contact.html">
+          <div class="navlink">CONTACT</div>
+        </a>
+        <a href="blog.html">
+          <div class="navlink">BLOG</div>
+        </a>
+      </div>
+      <br>
+    </div>
+    <div id='ct' ></div>
+    </header>
+
+    <div class="leopard">
+          <div class="leopard-text">
+            <h1>THE SNOW LEOPARD: ELEGANT AND ELUSIVE</h1>
+            <a href="#" class="hero-link">Discover More</a>
+          </div>
+     </div>
+<p class="q">“A simple act of kindness and compassion towards a single animal may not mean anything to all creatures, but will mean everything to one.”
+― Paul Oxton</p>
+<div class="posts">
+                    <div class="post">
+                      <div class="text">
+                        <a href="#" style="text-decoration:none";><h2>JAGUAR: THE AMAZON’S AMAZING SWIMMING CAT</h2></a>
+                        <p>A symbol of the enigmatic power of the Amazon, the jaguar is the largest cat in the Americas. Jaguars have unusually large, round heads, short legs and a stunning coat dotted with dark rosettes and spots.</p>
+                      </div>
+                      <img src="https://www.parczoologiquedeparis.fr/sites/parczoologiquedeparis/files/thumbnails/image/fg4_5398_c_f-g_grandin_mnhn.jpg">
+                    </div>
+
+                    <div class="post">
+                      <img src="https://images.unsplash.com/photo-1553425300-8bd56360f8eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                      <div class="text">
+                        <a href="#" style="text-decoration:none";><h2>POLAR BEAR: ICON ON ICE</h2></a>
+                        <p>Polar bears are the planet’s biggest land-based carnivores – although they actually spend most of their lives around water and ice (their Latin name means ‘sea bear’). So they’re at particular risk from global warming, which is melting the Arctic sea ice they depend on.</p>
+                      </div>
+                    </div>
+
+                    <div class="post">
+                      <div class="text">
+                        <a href="#" style="text-decoration:none";><h2>GIANT PANDAS: LIVING PROOF THAT CONSERVATION WORKS</h2></a>
+                        <p>Pandas typically lead a solitary life. They're excellent tree climbers, but they spend most of their time feeding. They can eat for 14 hours a day, mainly bamboo, which is 99% of their diet (though they sometimes eat eggs or small animals too).</p>
+                      </div>
+                      <img src="https://static.polityka.pl/_resource/res/path/51/1f/511fccd0-bf8c-4e5f-b1ff-eb70fb551043_f1400x900">
+                    </div>
+      </div>
+        <div class="panda1">
+          <img class="panda"  src="https://www.topchinatravel.com/pic/china-guide/giant-panda.jpg">
+          <div class="panda-text">Check out my photos from lastest adventure!</div>
+          <a href="africa.html" button class="btn2">Click here!</a>
+        </div>
+    <div class="footer">
+      <p>&copy; All rights reserved.</p>
+      <div class="s-m">
+   <a href="#"><i class="fab fa-facebook-f"></i></a>
+   <a href="#"><i class="fab fa-twitter"></i></a>
+   <a href="#"><i class="fab fa-google-plus-g"></i></a>
+   <a href="#"><i class="fab fa-youtube"></i></a>
+   <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+    </div>
+
+  </body>
+</html>
